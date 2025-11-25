@@ -1,0 +1,13 @@
+{
+  "timePeriods": [
+    {
+      "startTime": "2024-09-01 00:00:00",
+      "endTime": "2024-09-10 23:00:00"
+    },
+    {
+      "startTime": "2024-07-01 00:00:00",
+      "endTime": "2024-08-15 23:00:00"
+    }
+  ],
+  "timeGranularity": "MINUTES_5"
+}

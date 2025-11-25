@@ -1,0 +1,376 @@
+{
+    "agents": {
+        "chr_num_agent": {
+            "filters": [
+                "AFUChrNumByDeviceFault",
+                "AFUChrNumByCoolingThreshold",
+                "AFUChrNumByLocalMode"
+            ],
+            "dps": [],
+            "state_args": [
+                {
+                    "ChilledWaterSystem_ChilledWaterSideColdLoad": {
+                        "start": 0,
+                        "end": 3800,
+                        "step": 100
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "GcChillerNumber_12_ChillerNumberFeedback": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "GcChillerNumber_3_ChillerNumberFeedback": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                }
+            ],
+            "reward_arg": "ChilledWaterSystem_ChilledWaterSideCOP",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "cdp_num_agent": {
+            "filters": [
+                "AFUCdpNumByChrNum"
+            ],
+            "dps": [
+                "dp_fluid"
+            ],
+            "state_args": [
+                {
+                    "MainCoolingWater_Flow": {
+                        "start": 200,
+                        "end": 800,
+                        "step": 50
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "GcCoolingWaterPumpNumber_123_CoolingWaterPumpNumberFeedback": {
+                        "start": 0,
+                        "end": 3,
+                        "step": 1
+                    }
+                },
+                {
+                    "GcCoolingWaterPumpNumber_45_CoolingWaterPumpNumberFeedback": {
+                        "start": 0,
+                        "end": 2,
+                        "step": 1
+                    }
+                }
+            ],
+            "reward_arg": "ChilledWaterSystem_CoolingWaterSideCOP",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "cls_delta_temperature_agent": {
+            "filters": [],
+            "dps": [],
+            "state_args": [
+                {
+                    "ChilledWaterSystem_CoolingWaterSideColdLoad": {
+                        "start": 0,
+                        "end": 3900,
+                        "step": 300
+                    }
+                },
+                {
+                    "ChilledWaterSystem_OutdoorWetBulbTemperature": {
+                        "start": 20,
+                        "end": 36,
+                        "step": 2
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "GcCoolingWaterPumpTempreture_CoolingWaterPumpTempretureFeedback": {
+                        "start": 0,
+                        "end": 5,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "reward_arg": "ChilledWaterSystem_CoolingWaterSideCOP",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "ct_out_temperature_agent": {
+            "filters": [],
+            "dps": [],
+            "state_args": [
+                {
+                    "ChilledWaterSystem_CoolingWaterSideColdLoad": {
+                        "start": 0,
+                        "end": 3900,
+                        "step": 300
+                    }
+                },
+                {
+                    "ChilledWaterSystem_OutdoorWetBulbTemperature": {
+                        "start": 20,
+                        "end": 36,
+                        "step": 2
+                    }
+                },
+                {
+                    "GcCoolingWaterPumpTempreture_CoolingWaterPumpTempretureFeedback": {
+                        "start": 2.0,
+                        "end": 5.5,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "GcCoolingTowerTempreture_CoolingTowerTempretureFeedback": {
+                        "start": 2.0,
+                        "end": 5.5,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "reward_arg": "ChilledWaterSystem_CoolingWaterSideCOP",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "ct_num_agent": {
+            "filters": [
+                "AFUCtNumByChrNum"
+            ],
+            "dps": [],
+            "state_args": [
+                {
+                    "ChilledWaterSystem_CoolingWaterSideColdLoad": {
+                        "start": 0,
+                        "end": 3900,
+                        "step": 300
+                    }
+                },
+                {
+                    "ChilledWaterSystem_OutdoorWetBulbTemperature": {
+                        "start": 20,
+                        "end": 36,
+                        "step": 2
+                    }
+                },
+                {
+                    "GcCoolingTowerTempreture_CoolingTowerTempretureFeedback": {
+                        "start": 0.5,
+                        "end": 5.5,
+                        "step": 0.5
+                    }
+                },
+                {
+                    "GcCoolingWaterPumpTempreture_CoolingWaterPumpTempretureFeedback": {
+                        "start": 2.0,
+                        "end": 5.0,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "GcCoolingTowerNumber_CoolingTowerNumberFeedback": {
+                        "start": 0,
+                        "end": 3,
+                        "step": 1
+                    }
+                }
+            ],
+            "reward_arg": "ChilledWaterSystem_CoolingWaterSideCOP",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "cws_agent": {
+            "filters": [
+                "AFUCWS"
+            ],
+            "dps": [],
+            "state_args": [
+                {
+                    "ChilledWaterSystem_ChilledWaterSideColdLoad": {
+                        "start": 0,
+                        "end": 3800,
+                        "step": 100
+                    }
+                },
+                {
+                    "GcChillerTempreture_ChillerTempretureFeedback": {
+                        "start": 7,
+                        "end": 14,
+                        "step": 0.5
+                    }
+                },
+                {
+                    "Chiller_1_NbRunningStatus": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "Chiller_2_NbRunningStatus": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "Chiller_3_NbRunningStatus": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "GcChilledWaterPumpNumber_123_ChilledWaterPumpNumberFeedback": {
+                        "start": 0,
+                        "end": 3,
+                        "step": 1
+                    }
+                },
+                {
+                    "GcChilledWaterPumpNumber_45_ChilledWaterPumpNumberFeedback": {
+                        "start": 0,
+                        "end": 2,
+                        "step": 1
+                    }
+                },
+                {
+                    "GcChilledWaterPumpPressure_ChilledWaterPumpPressureFeedback": {
+                        "start": 0.45,
+                        "end": 1.5,
+                        "step": 0.05
+                    }
+                }
+            ],
+            "reward_arg": "ChilledWaterSystem_ChilledWaterSideCOP",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "chiller_supply_temperature_agent": {
+            "filters": [
+                "AFUChrSupplyTemp"
+            ],
+            "dps": [
+                "dp_mean_plr",
+                "dp_chr_state"
+            ],
+            "state_args": [
+                {
+                    "ChilledWaterSystem_ChillerLoadRate": {
+                        "start": 30,
+                        "end": 100,
+                        "step": 5
+                    }
+                },
+                {
+                    "GcCoolingTowerTempreture_CoolingTowerTempretureFeedback": {
+                        "start": 22,
+                        "end": 35,
+                        "step": 0.5
+                    }
+                },
+                {
+                    "Chiller_1_NbRunningStatus": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "Chiller_2_NbRunningStatus": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "Chiller_3_NbRunningStatus": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "GcChillerTempreture_ChillerTempretureFeedback": {
+                        "start": 7,
+                        "end": 14,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "reward_arg": "ChilledWaterSystem_ChilledWaterSideCOP",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        }
+    },
+    "agent_links": [
+        {
+            "from": "cls_delta_temperature_agent",
+            "to": "ct_out_temperature_agent",
+            "inter_paras": ["GcCoolingWaterPumpTempreture_CoolingWaterPumpTempretureFeedback"]
+        },
+        {
+            "from": "cls_delta_temperature_agent",
+            "to": "cdp_num_agent",
+            "inter_paras": ["GcCoolingWaterPumpTempreture_CoolingWaterPumpTempretureFeedback"]
+        },
+        {
+            "from": "chr_num_agent",
+            "to": "cdp_num_agent",
+            "inter_paras": ["GcChillerNumber_12_ChillerNumberFeedback", "GcChillerNumber_3_ChillerNumberFeedback"]
+        },
+        {
+            "from": "ct_out_temperature_agent",
+            "to": "ct_num_agent",
+            "inter_paras": ["GcCoolingTowerTempreture_CoolingTowerTempretureFeedback"]
+        },
+        {
+            "from": "cls_delta_temperature_agent",
+            "to": "ct_num_agent",
+            "inter_paras": ["GcCoolingWaterPumpTempreture_CoolingWaterPumpTempretureFeedback"]
+        },
+        {
+            "from": "chr_num_agent",
+            "to": "chiller_supply_temperature_agent",
+            "inter_paras": ["GcChillerNumber_12_ChillerNumberFeedback", "GcChillerNumber_3_ChillerNumberFeedback"]
+        },
+        {
+            "from": "ct_out_temperature_agent",
+            "to": "chiller_supply_temperature_agent",
+            "inter_paras": ["GcCoolingTowerTempreture_CoolingTowerTempretureFeedback"]
+        },
+        {
+            "from": "chiller_supply_temperature_agent",
+            "to": "cws_agent",
+            "inter_paras": ["GcChillerTempreture_ChillerTempretureFeedback"]
+        },
+        {
+            "from": "chr_num_agent",
+            "to": "cws_agent",
+            "inter_paras": ["GcChillerNumber_12_ChillerNumberFeedback", "GcChillerNumber_3_ChillerNumberFeedback"]
+        }
+    ]
+}

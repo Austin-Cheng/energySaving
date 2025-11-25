@@ -1,0 +1,371 @@
+{
+    "agents": {
+        "chr_num_agent": {
+            "filters": [
+            ],
+            "dps": [],
+            "state_args": [
+                {
+                    "cds_cooling": {
+                        "start": 0,
+                        "end": 3800,
+                        "step": 100
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "chr_12_num": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "chr_3_num": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                }
+            ],
+            "reward_arg": "cds_cop",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "cdp_num_agent": {
+            "filters": [
+                "AFUCdpNumByChrNum"
+            ],
+            "dps": [
+                "dp_fluid"
+            ],
+            "state_args": [
+                {
+                    "mpp_cdp_water_fluid": {
+                        "start": 200,
+                        "end": 800,
+                        "step": 50
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "cdp_123_num": {
+                        "start": 0,
+                        "end": 3,
+                        "step": 1
+                    }
+                },
+                {
+                    "cdp_45_num": {
+                        "start": 0,
+                        "end": 2,
+                        "step": 1
+                    }
+                }
+            ],
+            "reward_arg": "cls_cop",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "cls_delta_temperature_agent": {
+            "filters": [],
+            "dps": [],
+            "state_args": [
+                {
+                    "cls_cooling": {
+                        "start": 0,
+                        "end": 3900,
+                        "step": 300
+                    }
+                },
+                {
+                    "outdoor_wet_temperature": {
+                        "start": 20,
+                        "end": 36,
+                        "step": 2
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "cls_delta_temperature": {
+                        "start": 0,
+                        "end": 5,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "reward_arg": "cls_cop",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "ct_out_temperature_agent": {
+            "filters": [],
+            "dps": [],
+            "state_args": [
+                {
+                    "cls_cooling": {
+                        "start": 0,
+                        "end": 3900,
+                        "step": 300
+                    }
+                },
+                {
+                    "outdoor_wet_temperature": {
+                        "start": 20,
+                        "end": 36,
+                        "step": 2
+                    }
+                },
+                {
+                    "cls_delta_temperature": {
+                        "start": 2.0,
+                        "end": 5.5,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "ct_out_temperature": {
+                        "start": 2.0,
+                        "end": 5.5,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "reward_arg": "cls_cop",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "ct_num_agent": {
+            "filters": [],
+            "dps": [],
+            "state_args": [
+                {
+                    "cls_cooling": {
+                        "start": 0,
+                        "end": 3900,
+                        "step": 300
+                    }
+                },
+                {
+                    "outdoor_wet_temperature": {
+                        "start": 20,
+                        "end": 36,
+                        "step": 2
+                    }
+                },
+                {
+                    "ct_out_temperature": {
+                        "start": 0.5,
+                        "end": 5.5,
+                        "step": 0.5
+                    }
+                },
+                {
+                    "cls_delta_temperature": {
+                        "start": 2.0,
+                        "end": 5.0,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "ct_123_num": {
+                        "start": 0,
+                        "end": 3,
+                        "step": 1
+                    }
+                }
+            ],
+            "reward_arg": "cls_cop",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "cws_agent": {
+            "filters": [
+                "AFUCWS"
+            ],
+            "dps": [],
+            "state_args": [
+                {
+                    "cds_cooling": {
+                        "start": 0,
+                        "end": 3800,
+                        "step": 100
+                    }
+                },
+                {
+                    "chiller_supply_temperature": {
+                        "start": 7,
+                        "end": 14,
+                        "step": 0.5
+                    }
+                },
+                {
+                    "chr_1_state": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "chr_2_state": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "chr_3_state": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "cwp_123_num": {
+                        "start": 0,
+                        "end": 3,
+                        "step": 1
+                    }
+                },
+                {
+                    "cwp_45_num": {
+                        "start": 0,
+                        "end": 2,
+                        "step": 1
+                    }
+                },
+                {
+                    "delta_press": {
+                        "start": 0.45,
+                        "end": 1.5,
+                        "step": 0.05
+                    }
+                }
+            ],
+            "reward_arg": "cds_cop",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        },
+        "chiller_supply_temperature_agent": {
+            "filters": [
+                "AFUChrSupplyTemp"
+            ],
+            "dps": [
+                "dp_mean_plr",
+                "dp_chr_state"
+            ],
+            "state_args": [
+                {
+                    "mean_plr": {
+                        "start": 30,
+                        "end": 100,
+                        "step": 5
+                    }
+                },
+                {
+                    "ct_out_temperature": {
+                        "start": 22,
+                        "end": 35,
+                        "step": 0.5
+                    }
+                },
+                {
+                    "chr_1_state": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "chr_2_state": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                },
+                {
+                    "chr_3_state": {
+                        "start": 0,
+                        "end": 1,
+                        "step": 1
+                    }
+                }
+            ],
+            "action_args": [
+                {
+                    "chiller_supply_temperature": {
+                        "start": 7,
+                        "end": 14,
+                        "step": 0.5
+                    }
+                }
+            ],
+            "reward_arg": "cds_cop",
+            "initial_value": 6.5,
+            "dynamic_args": [],
+            "static_args": []
+        }
+    },
+    "agent_links": [
+        {
+            "from": "cls_delta_temperature_agent",
+            "to": "ct_out_temperature_agent",
+            "inter_paras": ["cls_delta_temperature"]
+        },
+        {
+            "from": "cls_delta_temperature_agent",
+            "to": "cdp_num_agent",
+            "inter_paras": ["cls_delta_temperature"]
+        },
+        {
+            "from": "chr_num_agent",
+            "to": "cdp_num_agent",
+            "inter_paras": ["chr_12_num", "chr_3_num"]
+        },
+        {
+            "from": "ct_out_temperature_agent",
+            "to": "ct_num_agent",
+            "inter_paras": ["ct_out_temperature"]
+        },
+        {
+            "from": "cls_delta_temperature_agent",
+            "to": "ct_num_agent",
+            "inter_paras": ["cls_delta_temperature"]
+        },
+        {
+            "from": "chr_num_agent",
+            "to": "chiller_supply_temperature_agent",
+            "inter_paras": ["chr_12_num", "chr_3_num"]
+        },
+        {
+            "from": "ct_out_temperature_agent",
+            "to": "chiller_supply_temperature_agent",
+            "inter_paras": ["ct_out_temperature"]
+        },
+        {
+            "from": "chiller_supply_temperature_agent",
+            "to": "cws_agent",
+            "inter_paras": ["chiller_supply_temperature"]
+        },
+        {
+            "from": "chr_num_agent",
+            "to": "cws_agent",
+            "inter_paras": ["chr_12_num", "chr_3_num"]
+        }
+    ]
+}

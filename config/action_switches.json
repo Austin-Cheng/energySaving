@@ -1,0 +1,57 @@
+[
+  {
+      "name": "chr_12_num",
+      "desc": "1#2#主机开启台数",
+      "value": "off"
+  },
+  {
+      "name": "chr_3_num",
+      "desc": "3#主机开启台数",
+      "value": "off"
+  },
+  {
+      "name": "cdp_123_num",
+      "desc": "1#2#3#冷冻水泵开启台数",
+      "value": "off"
+  },
+  {
+      "name": "cdp_45_num",
+      "desc": "4#5#冷冻水泵开启台数",
+      "value": "off"
+  },
+  {
+      "name": "cwp_123_num",
+      "desc": "1#2#3#冷却水泵开启台数",
+      "value": "off"
+  },
+  {
+      "name": "cwp_45_num",
+      "desc": "4#5#冷却水泵开启台数",
+      "value": "off"
+  },
+  {
+      "name": "ct_123_num",
+      "desc": "1#2#3#冷却塔开启台数",
+      "value": "off"
+  },
+  {
+      "name": "ct_out_temperature",
+      "desc": "冷却塔下塔水温",
+      "value": "off"
+  },
+  {
+      "name": "cls_delta_temperature",
+      "desc": "冷却侧温差",
+      "value": "off"
+  },
+  {
+      "name": "cds_delta_press",
+      "desc": "冷东侧压差",
+      "value": "off"
+  },
+  {
+      "name": "chiller_supply_temperature",
+      "desc": "冷机供水温度",
+      "value": "on"
+  }
+]

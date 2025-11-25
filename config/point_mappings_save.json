@@ -1,0 +1,21 @@
+{
+  "chr_1_fault": "chr_1_fault",
+  "chr_2_fault": "chr_2_fault",
+  "chr_3_fault": "chr_3_fault",
+  "chr_1_mode": "chr_1_mode",
+  "chr_2_mode": "chr_2_mode",
+  "chr_3_mode": "chr_3_mode",
+  "chr_1_state": "chr_1_state",
+  "chr_2_state": "chr_2_state",
+  "chr_3_state": "chr_3_state",
+  "chr_12_num": "chr_12_num",
+  "chr_3_num": "chr_3_num",
+  "cds_cooling": "cds_cooling",
+  "delta_press": "delta_press",
+  "chiller_supply_temperature": "chiller_supply_temperature",
+  "mean_plr": "mean_plr",
+  "cds_delta_temperature": "cds_delta_temperature",
+  "cls_delta_temperature": "cls_delta_temperature",
+  "cls_cooling": "cls_cooling",
+  "mpp_cdp_water_fluid": "mpp_cdp_water_fluid"
+}

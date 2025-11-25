@@ -1,0 +1,34 @@
+[ {
+  "name" : "chiller_supply_temperature",
+  "desc" : "冷机出水温度",
+  "data_type" : "double",
+  "max_step" : 0.6,
+  "up_limit" : 12.21111,
+  "low_limit" : 7
+}, {
+  "name" : "cds_delta_temperature",
+  "desc" : "冷冻侧温差",
+  "data_type" : "double",
+  "max_step" : null,
+  "up_limit" : 5,
+  "low_limit" : 0
+}, {
+  "name" : "plr",
+  "desc" : "冷机负载率",
+  "max_step" : null,
+  "up_limit" : 100,
+  "low_limit" : 0
+}, {
+  "name" : "delta_press",
+  "desc" : "冷东侧压差",
+  "max_step" : 0.1,
+  "up_limit" : 1,
+  "low_limit" : 0
+}, {
+  "name" : "cwp_num",
+  "desc" : "冷冻泵开启台数",
+  "data_type" : "int",
+  "max_step" : 2,
+  "up_limit" : 5,
+  "low_limit" : 0
+} ]

@@ -1,0 +1,21 @@
+{
+  "chr_1_fault": "Chiller_1_NbFaultStatus",
+  "chr_2_fault": "Chiller_2_NbFaultStatus",
+  "chr_3_fault": "Chiller_3_NbFaultStatus",
+  "chr_1_mode": "Chiller_1_ManualAutomatic",
+  "chr_2_mode": "Chiller_2_ManualAutomatic",
+  "chr_3_mode": "Chiller_3_ManualAutomatic",
+  "chr_1_state": "Chiller_1_NbRunningStatus",
+  "chr_2_state": "Chiller_2_NbRunningStatus",
+  "chr_3_state": "Chiller_3_NbRunningStatus",
+  "chr_12_num": "GcChillerNumber_12_ChillerNumberFeedback",
+  "chr_3_num": "GcChillerNumber_3_ChillerNumberFeedback",
+  "cds_cooling": "ChilledWaterSystem_ChilledWaterSideColdLoad",
+  "delta_press": "GcChilledWaterPumpPressure_ChilledWaterPumpPressureFeedback",
+  "chiller_supply_temperature": "GcChillerTempreture_ChillerTempretureFeedback",
+  "mean_plr": "ChilledWaterSystem_ChillerLoadRate",
+  "cds_delta_temperature": "MainChilledWater_WaterDifferentialTemperatureFeedback",
+  "cls_delta_temperature": "GcCoolingWaterPumpTempreture_CoolingWaterPumpTempretureFeedback",
+  "cls_cooling": "ChilledWaterSystem_CoolingWaterSideColdLoad",
+  "mpp_cdp_water_fluid": "MainCoolingWater_Flow"
+}

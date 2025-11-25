@@ -1,0 +1,26 @@
+{
+"operations":[
+  {
+    "operation": "training",
+    "name": "历史训练",
+    "terminable": false,
+    "entrance": "run_train_history.py",
+    "schedule": "once"
+  },
+  {
+    "operation": "reasoning",
+    "name": "实时推理",
+    "terminable": true,
+    "entrance": "run_reason_realtime.py",
+    "schedule": "5min"
+  },
+  {
+    "operation": "reasoning",
+    "name": "快速模拟推理",
+    "terminable": false,
+    "entrance": "run_reason_fast_simul.py",
+    "schedule": "once"
+  }
+],
+"name": "柏悦节能算法"
+}
